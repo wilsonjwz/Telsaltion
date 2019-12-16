@@ -3,7 +3,7 @@ package Telsaltion
 import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tietang/props/kvs"
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 
 	"reflect"
 )
