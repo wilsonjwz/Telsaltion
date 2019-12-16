@@ -1,7 +1,7 @@
 package starters
 
 import (
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 	"github.com/go-playground/locales/zh"
 	"github.com/go-playground/universal-translator"
 	log "github.com/sirupsen/logrus"

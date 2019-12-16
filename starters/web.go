@@ -1,7 +1,7 @@
 package starters
 
 import (
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 )
 
 var apiInitializerRegister *base.InitializeRegister = new(base.InitializeRegister)

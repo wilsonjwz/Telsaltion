@@ -1,7 +1,7 @@
 package starters
 
 import (
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 	"github.com/go-redis/redis"
 	"github.com/sirupsen/logrus"
 	"strconv"

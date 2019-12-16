@@ -2,7 +2,7 @@ package starters
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 	"os"
 	"os/signal"
 	"reflect"

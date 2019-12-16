@@ -3,7 +3,7 @@ package starters
 import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/sirupsen/logrus"
-	"github.com/wilsonj/Telsaltion/base"
+	"github.com/wilsonjwz/Telsaltion/base"
 	"xorm.io/xorm"
 )
 
