@@ -29,9 +29,10 @@ func (x *XormEngineStarter) Setup(ctx base.StarterContext) {
 	user := conf.GetDefault("mysql.root", "root")
 	pwd := conf.GetDefault("mysql.password", "")
 	database := conf.GetDefault("mysql.database", "test")
-	e, err := xorm.NewEngine(driverName, user+":"+pwd+"@/"+database+"?charset=utf8")
-	e.SetMaxIdleConns(conf.GetIntDefault("mysql.maxIdleConns", 4))
-	e.SetMaxOpenConns(conf.GetIntDefault("mysql.maxOpenConns.", 4))
+	address := conf.GetDefault("mysql.address", "127.0.0.1:3306")
+	e, err := xorm.NewEngine(driverName, user+":"+pwd+"@("+address+")/"+database+"?charset=utf8")
+	e.SetMaxIdleConns(conf.GetIntDefault("mysql.maxIdleConns", 10))
+	e.SetMaxOpenConns(conf.GetIntDefault("mysql.maxOpenConns", 10))
 	if err != nil {
 		panic(err)
 	}
