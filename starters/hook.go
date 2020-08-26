@@ -29,7 +29,6 @@ func (s *HookStarter) Init(ctx base.StarterContext) {
 			for _, fn := range callbacks {
 				fn()
 			}
-			break
 			os.Exit(0)
 		}
 	}()
