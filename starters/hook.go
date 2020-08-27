@@ -21,7 +21,7 @@ type HookStarter struct {
 
 func (s *HookStarter) Init(ctx base.StarterContext) {
 	sigs := make(chan os.Signal)
-	signal.Notify(sigs, syscall.SIGQUIT, syscall.SIGTERM)
+	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 	go func() {
 		for {
 			c := <-sigs
