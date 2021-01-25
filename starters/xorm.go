@@ -26,7 +26,7 @@ func (x *XormEngineStarter) Setup(ctx base.StarterContext) {
 	logrus.Info("xorm setup")
 	conf := ctx.Props()
 	driverName := conf.GetDefault("mysql.driverName", "mysql")
-	user := conf.GetDefault("mysql.root", "root")
+	user := conf.GetDefault("mysql.user", "root")
 	pwd := conf.GetDefault("mysql.password", "")
 	database := conf.GetDefault("mysql.database", "test")
 	address := conf.GetDefault("mysql.address", "127.0.0.1:3306")
